@@ -19,10 +19,24 @@ views:
 Om
 =========================
 
+<p class="comment">
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+</p>
 
-Skriv några kloka ord om kursen?
+The course Technical Web Design and Usability (a.k.a. design) 
+teaches web developers to prepare their websites technocally for 
+design and usabilty. 
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
+[FIGURE src=image/usability.jpg?w=300 caption="Web Usability"]
 
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+The course covers the following areas: 
+
+- Color theory and color schemes for websites 
+- Typography 
+- Laws and rukes regarding making websites 
+- Accessibility 
+- Grid layout 
+- CSS/LESS/SASS 
+- Theme development 
+- Using PHP framework for creating and designing a website 
+- SEO 

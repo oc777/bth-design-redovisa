@@ -1,3 +1,4 @@
 #### Kursrepo
 
-Skriv något kort om kursen och länka till [kursens hemsida på dbwebb.se](XXX) och till [kursrepot på GitHub](XXX).
+Course material for Web design and usability for the programmer (design) can be found 
+[here&nbsp;<i class="fa fa-github fa-lg"></i>](https://github.com/dbwebb-se/design)
