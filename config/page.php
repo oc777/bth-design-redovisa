@@ -20,7 +20,8 @@ return [
             "stylesheets" => [
                 // Change here to set another default stylesheet
                 "css/dbwebb-se.min.css",
-                //"css/kmom01.css",
+                "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+                "css/kmom01.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
