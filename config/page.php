@@ -19,9 +19,9 @@ return [
             "lang" => "sv",
             "stylesheets" => [
                 // Change here to set another default stylesheet
-                "css/dbwebb-se.min.css",
-                "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
                 "css/kmom01.css",
+                // "css/dbwebb-se.min.css",
+                "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
