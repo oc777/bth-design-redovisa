@@ -11,7 +11,7 @@ views:
 This is a test page
 =========================
 
-<p class="comment">
+<p class="comment" markdown="1">
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/test.md`.
 </p>
 

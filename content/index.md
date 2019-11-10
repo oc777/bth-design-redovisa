@@ -14,7 +14,7 @@ views:
 Me-page! Me Me Me!!!
 =========================
 
-<p class="comment">
+<p class="comment" markdown="1">
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 </p>
 
