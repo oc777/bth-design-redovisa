@@ -21,7 +21,7 @@ return [
                 // Change here to set another default stylesheet
                 "css/kmom01.css",
                 // "css/dbwebb-se.min.css",
-                "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+                "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",

@@ -161,6 +161,7 @@ ul {
 
 .footer-column {
     padding: 10px;
+    flex: 1 1 0px
 }
 
 .footer-column + .footer-column {
