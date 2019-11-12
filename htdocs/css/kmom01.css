@@ -75,7 +75,8 @@ a:hover {
 }
 
 .my-navbar a:hover,
-.figure a:hover {
+.figure a:hover,
+.site-logo-text a:hover {
     background-color: transparent;
 }
 
