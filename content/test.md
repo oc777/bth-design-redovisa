@@ -1,4 +1,6 @@
 ---
+title: "Test"
+
 views:
     test-left:
         region: sidebar-left

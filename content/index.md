@@ -1,5 +1,5 @@
 ---
-title: "Min fina titel"
+title: "Redovisa - Design"
 
 views:
     byline:
