@@ -1,5 +1,12 @@
 ---
 views:
+    test-left:
+        region: sidebar-left
+        template: anax/v2/block/default
+        data:
+            meta: 
+                type: single
+                route: block/test-left
     test-side:
         region: sidebar-right
         template: anax/v2/block/default
