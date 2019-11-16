@@ -1,0 +1,33 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+@media screen and (max-width: 1500px) {
+    .site-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .left,
+    .right {
+        float: none;
+    }
+
+    .footer-column-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column + .footer-column {
+        border-left: none;
+        border-top: 1px solid #fff;
+    }
+
+    .region-sidebar-left,
+    .region-sidebar-right,
+    .region-main.has-sidebar {
+        display: block;
+        width: 100%;
+    }
+}

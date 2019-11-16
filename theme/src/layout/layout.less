@@ -1,0 +1,179 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+@bgFooter: darkgray;
+@colorFooter: rgb(48, 47, 47);
+
+/**
+ * General layout
+ */
+
+// .inner-wrap {
+//     max-width: 1100px;
+//     margin: 0 auto;
+// }
+
+.wrap-all {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: solid 2px #fff;
+    min-height: 100%;
+}
+
+.inner-wrap-main {
+    padding: 20px;
+}
+
+.region-header-col-1 {
+    height: 4rem;
+}
+
+.site-logo {
+    display: none;
+}
+
+.site-logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.site-logo-text:hover {
+    text-shadow: 2px 2px 2px green;
+}
+
+.my-navbar {
+    list-style: none;
+    display: flex;
+    background-color: lightgrey;
+    justify-content: space-evenly;
+    border: solid 2px lightgrey;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.my-navbar li {
+    text-transform: uppercase;
+    // padding: 15px;
+}
+
+.my-navbar li:hover {
+    background-color: #fff;
+    display: block;
+}
+
+.my-navbar a:hover,
+.figure a:hover,
+.site-logo-text a:hover {
+    background-color: transparent;
+}
+
+a.rm-button .rm-button-face-1 {
+    font-size: 2rem;
+}
+
+.byline {
+    padding: 15px;
+    background-color: rgb(251, 251, 249);
+    display: flex;
+    margin: 15px auto;
+    width: 95%;
+}
+
+.byline img {
+    width: 80px;
+    height: 80px;
+}
+
+.byline p {
+    padding: 0 25px;
+}
+
+.byline p span {
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+figure.figure.left {
+    margin-right: 30px !important;
+}
+
+.comment {
+    font-style: italic;
+    color: gray;
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    /*float: left;*/
+    display: inline-block;
+    vertical-align:top;
+    width: 25%;
+}
+
+.region-main.has-sidebar {
+    display: inline-block;
+    width: 70%;
+}
+
+.region-main.has-sidebar.has-sidebar-left.has-sidebar-right {
+    width: 45%;
+}
+
+.region-footer {
+    background-color: @bgFooter;
+    overflow: auto;
+    color: @colorFooter;
+}
+
+.footer-column-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #fff;
+}
+
+.site-footer {
+    text-align: center;
+}
+
+.footer-column {
+    padding: 10px;
+    flex: 1 1 0px
+}
+
+.footer-column + .footer-column {
+    border-left: 1px solid #fff;
+}
+
+.next-previous {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    font-family: monospace;
+}
+
+.breadcrumb-list ul {
+    list-style: none;
+    display: flex;
+}
+
+.breadcrumb-list li::after {
+    content: " » ";
+    padding: 0 10px;
+}
+
+.smiley {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    display: inline-block;
+}
