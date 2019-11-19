@@ -1,0 +1,240 @@
+/**
+* Layout style for vgrid
+*/
+
+/**
+* Variables
+*/
+@bgFooter: darkgray;
+@colorFooter: rgb(48, 47, 47);
+@pageWidth: 1100px;
+
+/**
+* General layout
+*/
+
+.row {
+    #desinax-vgrid.row();
+    //#desinax-vgrid.grid(100%);
+
+    background-color: rgba(0, 255, 0, 0.249);
+    margin-bottom: 12px;
+}
+
+.wrap-all {
+    // max-width: 1100px;
+    // margin: 0 auto;
+    background-color: #fff;
+    //border: solid 2px #fff;
+    min-height: 100%;
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(@pageWidth);
+}
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, @pageWidth);
+
+    // &.inner-wrap-header,
+    // &.inner-wrap-footer {
+    //     #desinax-vgrid.showGrid(@gridImage);
+    // }
+}
+
+// .inner-wrap-header,
+// .inner-wrap-footer {
+//     #desinax-vgrid.grid(100%);
+// }
+
+.inner-wrap-main {
+    padding: 20px;
+}
+
+.region-header-col-1 {
+    height: 4rem;
+    #desinax-vgrid.column(@columns / 2);
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(@columns);
+}
+
+.site-logo {
+    display: none;
+}
+
+.site-logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.site-logo-text:hover {
+    text-shadow: 2px 2px 2px green;
+}
+
+.my-navbar {
+    list-style: none;
+    display: flex;
+    background-color: lightgrey;
+    justify-content: space-evenly;
+    border: solid 2px lightgrey;
+    font-family: monospace;
+    font-weight: bold;
+
+    li {
+        text-transform: uppercase;
+        // padding: 15px;
+
+        &:hover {
+            background-color: #fff;
+            display: block;
+        }
+    }
+}
+
+.my-navbar a:hover,
+.figure a:hover,
+.site-logo-text a:hover {
+    background-color: transparent;
+}
+
+a.rm-button .rm-button-face-1 {
+    font-size: 2rem;
+}
+
+.byline {
+    padding: 15px;
+    background-color: rgb(251, 251, 249);
+    display: flex;
+    //margin: 15px auto;
+    //width: 95%;
+
+    img {
+        //width: 80px;
+        height: 80px;
+    }
+
+    p {
+        padding: 0 25px;
+
+        span {
+            color: purple;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+}
+
+figure.figure.left {
+    margin-right: 30px !important;
+}
+
+.comment {
+    font-style: italic;
+    color: gray;
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    /*float: left;*/
+    display: inline-block;
+    vertical-align:top;
+    //width: 25%;
+    #desinax-vgrid.column(6);
+}
+
+.region-main {
+    #desinax-vgrid.column(18);
+
+    &.has-sidebar {
+        display: inline-block;
+        //width: 70%;
+        #desinax-vgrid.column(18);
+
+        &.has-sidebar-left.has-sidebar-right {
+            //width: 45%;
+            #desinax-vgrid.column(12);
+        }
+    }
+}
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+}
+
+.footer-column-wrapper {
+    // display: flex;
+    // justify-content: space-evenly;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-column {
+    //padding: 10px;
+    //flex: 1 1 0px
+    #desinax-vgrid.column(@columns / 3);
+
+    & + & {
+        //border-left: 1px solid #fff;
+    }
+}
+
+.outer-wrap-footer,
+.inner-wrap-footer {
+    background-color: @bgFooter;
+    color: @colorFooter;
+}
+
+.region-footer {
+    //overflow: auto;
+}
+
+.site-footer {
+    text-align: center;
+    #desinax-vgrid.column(@columns);
+}
+
+
+.next-previous {
+    #desinax-vgrid.grid(100%);
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    font-family: monospace;
+
+    .next,
+    .previous {
+        #desinax-vgrid.grid(50%);
+    }
+}
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+}
+
+.breadcrumb-list {
+    ul {
+        list-style: none;
+        display: flex;
+    }
+    li {
+        &:after {
+            content: " » ";
+            padding: 0 10px;
+        }
+    }
+}
+
+.smiley {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    display: inline-block;
+    font-family: sans-serif;
+}
