@@ -5392,12 +5392,12 @@ figure.figure.left {
   .region-main.has-sidebar.has-sidebar-left.has-sidebar-right {
     display: inline;
     float: left;
-    width: 65.625%;
+    width: 61.45833333%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
     margin-left: 4.6875%;
   }
-  .region-sidebar-right {
+  .region-sidebar-right.has-sidebar-left {
     margin-left: 4.6875%;
   }
 }
