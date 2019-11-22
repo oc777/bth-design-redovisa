@@ -1,5 +1,7 @@
 /*!
- * stylesheet for design kmom03
+ * Stylesheet for design kmom03
+ *
+ * stylesheet for grid layout in kmom03
  */
 
 /**
@@ -28,21 +30,22 @@
 /**
  * Base style to affect HTML elements on a general scale.
  */
-@import "base/base.less";
-
+// @import "base/base.less";
+@import "base/base_kmom03.less";
 
 
 /**
  * Import the vertical grid.
  */
 @import "@desinax/vertical-grid/less/grid.less";
-@import "layout/layout_grid.less";
 
-// Default grid, change to fit your requirements.
-// @columnWidth:   30;
-// @gutterWidth:   10;
-// @columns:       24;
-// @gridType:      "float"; // "flex"
+
+
+/**
+ * Import the typographic grid.
+ */
+ @import "@desinax/typographic-grid/less/typography-font-families.less";
+ @import "@desinax/typographic-grid/less/typography-defaults.less";
 
 
 
@@ -51,6 +54,7 @@
  * and other regions of the page including route specific styles.
  */
 //@import "layout/layout.less";
+@import "layout/layout_kmom03.less";
 @import "layout/responsive.less";
 @import "layout/regions.less";     // To add style for ?regions
 
@@ -69,3 +73,9 @@
  */
 @bgFooter: #424242;
 @colorFooter: #fff;
+
+// Settings for vertical grid
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"

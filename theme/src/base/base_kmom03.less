@@ -4,7 +4,7 @@
 @bgColorHtml: #424242;
 @bgColorBody: rgb(210, 210, 210);
 @colorBody: #333;
-@fontFamilyBody: serif;
+//@fontFamilyBody: serif;
 
 /* Hide submenu, leave this to kmom02 */
 // .rm-desktop ul {
@@ -17,16 +17,16 @@
 }
 
 html {
-    overflow-y: scroll;
+    // overflow-y: scroll;
     background-color: @bgColorHtml;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
     color: @colorBody;
     background-color: @bgColorBody;
-    font: 100.01%/1 @fontFamilyBody;
+    #desinax-hgrid.font(@fontSizeBody);
 }
 
 a,
@@ -52,3 +52,6 @@ a:hover {
 img {
     max-width: 100%;
 }
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
