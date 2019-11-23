@@ -5209,6 +5209,9 @@ hr::after {
   background-color: #fff;
   display: block;
 }
+.my-navbar li ul a:hover {
+  text-decoration: underline;
+}
 .my-navbar a:hover,
 .figure a:hover,
 .site-logo-text a:hover {
@@ -5427,6 +5430,7 @@ figure.figure.left {
   .region-sidebar-left,
   .region-sidebar-right,
   .region-main.has-sidebar,
+  .region-main.has-sidebar.has-sidebar-left,
   .region-main.has-sidebar.has-sidebar-left.has-sidebar-right {
     display: block;
     display: inline;
