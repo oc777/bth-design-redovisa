@@ -2,6 +2,10 @@ Revision history
 ================
 
 
+v3.0.0 (2019-11-25)
+----------------
+Adding solution for `kmom03`
+
 v2.0.0 (2019-11-16)
 ----------------
 Adding solution for `kmom02`
